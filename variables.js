@@ -8,5 +8,8 @@ myAge = 22;
 var herAge;
 herAge = myAge;
 
+// Initializing Variables with the Assignment Operator
+var myBirthDay = 150999;
+
 console.log(myAge);
 console.log(herAge);
