@@ -1,2 +1,1 @@
-# Basic JavaScript
-
+# JavaScript Playground
