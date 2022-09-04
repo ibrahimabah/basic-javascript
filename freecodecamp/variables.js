@@ -11,5 +11,10 @@ herAge = myAge;
 // Initializing Variables with the Assignment Operator
 var myBirthDay = 150999;
 
-console.log(myAge);
-console.log(herAge);
+// Declare String Variables
+var myFirstName = "Ibrahima";
+var myLastName = "Bah";
+
+
+console.log(myFirstName);
+console.log(myLastName);
