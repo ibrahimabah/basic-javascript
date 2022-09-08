@@ -40,3 +40,16 @@ const contacts = [
   
   let lookUp = lookUpProfile("Akira", "likes");
   console.log(lookUp);
+
+  /* Use Recursion to Create a Range of Numbers */
+  function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+      return [];
+    } else {
+      let countArr = rangeOfNumbers(startNum, endNum -1);
+      countArr.push(endNum);
+      return countArr;
+    }
+  };
+  
+  console.log(rangeOfNumbers(10,20));
