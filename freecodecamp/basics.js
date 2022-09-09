@@ -1,9 +1,36 @@
-//Comment your JavaScript code
+// 001 : single comments
 
-// single comments
-/*
+/* 002 :
 multiple comments
 */
+
+// 003 : Declare JavaScript Variables
+var myAge;
+
+// 004 : Storing Values with the Assignment Operator
+myAge = 22;
+
+// 005 : Assigning the Value of One Variable to Another
+var herAge;
+herAge = myAge;
+
+// 006 : Initializing Variables with the Assignment Operator
+var birthMonth = 09;
+
+// 007 : Declare String Variables
+var firstName = "Ibrahima";
+var lastName = "Bah";
+
+// 008 : Understanding Uninitialized Variables
+  // Only change code below this line
+var a;
+var b;
+var c;
+
+  // Only change code above this line
+a = 3;
+b = 2;
+c = " Go";
 
 /* Generate Random Fractions with JavaScript */
 function randomFraction() {
