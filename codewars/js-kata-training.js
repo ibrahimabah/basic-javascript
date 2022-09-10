@@ -52,3 +52,30 @@ function equal5(){
 equal5();
 
 // Training JS #3: Basic data types--String
+// mission 1
+var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n" 
+function Dad(){
+  //select some variable to combine "Dad"
+  let dadCheck = d1+a2+d2;
+    console.log(dadCheck);
+}
+Dad();
+
+function Bee(){
+  //select some variable to combine "Bee"
+  let beeCheck = b1+e2+e2;
+    console.log(beeCheck);
+}
+Bee();
+
+function banana(){
+  //select some variable to combine "banana"
+  let banCheck =  b2+a2+n2+a2+n2+a2;
+  console.log(banCheck);
+}
+banana();
+
+// mission 2
+//answer some questions if you finished works above
+
+  
