@@ -1,4 +1,4 @@
-// Compare Scopes of the var and let Keywords
+// 01 : Compare Scopes of the var and let Keywords
 function checkScope() {
     let i = 'function scope';
     if (true) {
@@ -8,5 +8,17 @@ function checkScope() {
     console.log('Function scope i is: ', i);
     return i;
   }
-  console.log(checkScope());
+  
+  // 02 : Mutate an Array Declared with const
+  const s = [5, 7, 2];
+  function editInPlace() {
+    // Only change code below this line
+      s[0] = 2;
+      s[1] = 5;
+      s[2] = 7;
+    // Only change code above this line
+    console.log(s);
+  }
+  editInPlace();
+
   
