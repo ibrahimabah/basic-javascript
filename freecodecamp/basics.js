@@ -1,36 +1,56 @@
 // 001 : single comments
 
-/* 002 :
+/* 001 :
 multiple comments
 */
 
-// 003 : Declare JavaScript Variables
-var myAge;
+// 002 : Declare JavaScript Variables
+  var myAge;
 
-// 004 : Storing Values with the Assignment Operator
-myAge = 22;
+// 003 : Storing Values with the Assignment Operator
+  myAge = 22;
 
-// 005 : Assigning the Value of One Variable to Another
-var herAge;
-herAge = myAge;
+// 004 : Assigning the Value of One Variable to Another
+  var herAge;
+  herAge = myAge;
 
-// 006 : Initializing Variables with the Assignment Operator
-var birthMonth = 09;
+// 005 : Initializing Variables with the Assignment Operator
+  var birthMonth = 09;
 
-// 007 : Declare String Variables
-var firstName = "Ibrahima";
-var lastName = "Bah";
+// 006 : Declare String Variables
+  var firstName = "Ibrahima";
+  var lastName = "Bah";
 
-// 008 : Understanding Uninitialized Variables
+// 007 : Understanding Uninitialized Variables
   // Only change code below this line
-var a;
-var b;
-var c;
-
+  var a;
+  var b;
+  var c;
   // Only change code above this line
-a = 3;
-b = 2;
-c = " Go";
+  a = 3;
+  b = 2;
+  c = " Go";
+
+// 008 : Understanding Case Sensitivity in Variables
+  // Variable declarations
+  var studlyCapVar;
+  var properCamelCase;
+  var titleCaseOver;
+  // Variable assignments
+  studlyCapVar = 10;
+  properCamelCase = "A String";
+  titleCaseOver = 9000;
+
+// 009 : Explore Differences Between the var and let Keywords
+  // in a nutshell 'var can be overridden but let returns an error'
+  let catName = "Oliver";
+  let catSound = "Meow!";  
+
+// 010 : Declare a Read-Only Variable with the const Keyword
+  const FCC = "freeCodeCamp"; // Change this line
+  let fact = "is cool!"; // Change this line
+  fact = "is awesome!";
+  // 'console.log(FCC, fact);'
 
 /* Generate Random Fractions with JavaScript */
 function randomFraction() {
