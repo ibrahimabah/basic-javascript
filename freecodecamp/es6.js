@@ -48,4 +48,14 @@ function editInPlace() {
     const myConcat = (arr1, arr2) =>
     arr1.concat(arr2);
 
+// 06 : Set Default Parameters for Your Functions
+    // Modify the function by adding default parameters so that it will add 1 to number if value is not specified.
+    const increment = (number, value = 1) => number + value;
+    console.log(increment());
+    
+
+// 07 :
+
+// 08 :
+
   
