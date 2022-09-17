@@ -52,6 +52,30 @@ multiple comments
   fact = "is awesome!";
   // 'console.log(FCC, fact);'
 
+// 011 : Add Two Numbers with JavaScript
+  const sum = 10 + 10;
+  // console.log(sum)
+
+// 012 : Subtract One Number from Another with JavaScript
+  const difference = 45 - 33;
+  //console.log(difference)
+
+// 013 : Multiply Two Numbers with JavaScript
+  const product = 8 * 10;
+  //console.log(product)
+
+// 014 :  Divide One Number by Another with JavaScript
+  const quotient = 66 / 33;
+  //console.log(quotient)
+
+// 015 : Increment a Number with JavaScript
+  let myVar = 87; // change :  myVar = myVar + 1;
+  myVar++; // result
+  //console.log(myVar)
+
+  //-_-_-_-_
+
+
 /* Generate Random Fractions with JavaScript */
 function randomFraction() {
 
