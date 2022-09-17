@@ -54,7 +54,11 @@ function editInPlace() {
     console.log(increment());
     
 
-// 07 :
+// 07 : Use the Rest Parameter with Function Parameters
+    const sum = (...args) => { // rest parameter : ...args etc
+        return args.reduce((a, b) => a + b, 0); // use arrow function
+    }
+    //console.log(sum(7,8)) 
 
 // 08 :
 
