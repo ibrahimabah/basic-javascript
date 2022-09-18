@@ -60,6 +60,14 @@ function editInPlace() {
     }
     //console.log(sum(7,8)) 
 
-// 08 :
+// 08 : Use the Spread Operator to Evaluate Arrays In-Place
+    const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+    let arr2; 
+    arr2 = [...arr1]; // Changed from : arr2 = [];
+    //console.log(arr2);
+
+
+// 09 : Use Destructuring Assignment to Extract Values from Objects
+
 
   
