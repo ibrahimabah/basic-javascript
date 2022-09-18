@@ -69,9 +69,33 @@ multiple comments
   //console.log(quotient)
 
 // 015 : Increment a Number with JavaScript
-  let myVar = 87; // change :  myVar = myVar + 1;
+  let myInt = 87; 
+  // change :  myVar = myVar + 1;
   myVar++; // result
   //console.log(myVar)
+
+// 016 : Decrement a Number with JavaScript
+  let myDent = 11;
+  // change : myVar = myVar - 1;
+  myDent--;// result
+  //console.log(myDent)
+
+// 017 : Create Decimal Numbers with JavaScript
+  // change : const ourDecimal = 5.7;
+  const myDecimal = 5.7; // result
+
+
+// 018 : Multiply Two Decimals with JavaScript
+  // change : const tool = 2.0 * 0.0;
+  const tool = 2.0 * 2.5; // result
+
+// 019 : Divide One Decimal by Another with JavaScript
+  // change : const splitDent = 0.0 / 2.0;
+  const splitDent = 8.8 / 2.0;
+
+// 020 : Finding a Remainder in JavaScript
+  const remainder = 11 % 3;
+
 
   //-_-_-_-_
 
