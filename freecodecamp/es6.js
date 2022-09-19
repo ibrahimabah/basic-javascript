@@ -82,7 +82,7 @@ function editInPlace() {
 
 
 // 10 : Use Destructuring Assignment to Assign Variables from Objects
-  const HIGH_TEMPERATURES = {
+  const HIGH_TEMPERATURE = {
     yesterday: 75,
     today: 77,
     tomorrow: 80
@@ -92,7 +92,7 @@ function editInPlace() {
     const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
   */
 
-    const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES; // result
+    const { today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURE; // result
 
   
 // 11 : Use Destructuring Assignment to Assign Variables from Nested Objects
