@@ -78,4 +78,40 @@ banana();
 // mission 2
 //answer some questions if you finished works above
 
-  
+// Training JS #4: Basic data types--Array
+var arr = [1,2,3];
+function getLength(arr){
+    //return length of arr
+    let lenCheck = arr.length;
+    console.log(lenCheck);
+  }
+  getLength();
+
+  function getFirst(arr){
+    //return the first element of arr
+    let elFirst = arr.push(); 
+    console.log(elFirst);
+  }
+  getFirst();
+
+  function getLast(arr){
+    //return the last element of arr
+    let lstEl = arr[arr.length-1];
+    console.log(lstEl);
+  }
+  getLast();
+
+  function pushElement(arr){
+    var el=1;
+    //push el to arr
+    let pshEl = arr.push(el);
+    console.log(pshEl);
+  }
+  pushElement();
+
+  function popElement(arr){
+    //pop an element from arr
+    let ppEl = arr.pop();
+    console.log(ppEl);
+  }  
+  popElement();
