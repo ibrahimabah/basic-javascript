@@ -97,4 +97,28 @@ function editInPlace() {
   
 // 11 : Use Destructuring Assignment to Assign Variables from Nested Objects
 
+// 12 : 
+// 13 :
+// 14 :
+// 15 : Create Strings using Template Literals
+
+// 16 : Write Concise Object Literal Declarations Using Object Property Shorthand
+    const createPerson = (name, age, gender) => ({name, age, gender});
+    const testObj = createPerson('Ibrahima', 23, 'Male');
+    console.log(testObj);
+
+// 17 : Write Concise Declarative Functions with ES6
+  // Only change code below this line
+    const bicycle = {
+      gear: 2,
+      setGear(newGear) {
+        this.gear = newGear;
+      }
+    };
+  // Only change code above this line
+    bicycle.setGear(3);
+    console.log(bicycle.gear);
+
+// 18 : Use class Syntax to Define a Constructor Function
+    
   
