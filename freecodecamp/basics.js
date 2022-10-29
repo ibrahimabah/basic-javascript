@@ -96,6 +96,48 @@ multiple comments
 // 020 : Finding a Remainder in JavaScript
   const remainder = 11 % 3;
 
+// 021 : Compound Assignment With Augmented Addition
+  let a = 3;
+  let b = 17;
+  let c = 12;
+
+  // solution
+  a += 12;
+  b += 9;
+  c += 7;  
+
+// 022 : Compound Assignment With Augmented Subtraction
+  let a = 11;
+  let b = 9;
+  let c = 3;
+
+  // solution
+  a -= 6;
+  b -= 15;
+  c -= 1;
+
+// 023 : Compound Assignment With Augmented Multiplication
+  let a = 5;
+  let b = 12;
+  let c = 4.6;
+
+  // solution
+  a *= 5;
+  b *= 3;
+  c *= 10;
+
+// 024 : Compound Assignment With Augmented Division
+  let a = 48;
+  let b = 108;
+  let c = 33;
+
+  // solution
+  a /= 12;
+  b /= 4;
+  c /= 11;
+
+// 025 : Escaping Literal Quotes in Strings
+  const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
   //-_-_-_-_
 
