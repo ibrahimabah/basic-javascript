@@ -100,17 +100,17 @@ multiple comments
   //-_-_-_-_
 
 
-/* Generate Random Fractions with JavaScript */
-function randomFraction() {
+// 105 : Generate Random Fractions with JavaScript
+  function randomFraction() {
 
     // Only change code below this line
   
-    return Math.random();
+      return Math.random();
   
     // Only change code above this line
-  }
+    }
   
-  /* Generate Random Whole Numbers with JavaScript */
+// 106 : Generate Random Whole Numbers with JavaScript 
   let random = randomFraction();
   console.log(random);
 
@@ -125,7 +125,7 @@ function randomFraction() {
   // log result
   console.log(whole);
 
-  /* Generate Random Whole Numbers within a Range */
+// 107 Generate Random Whole Numbers within a Range 
   function randomRange(myMin, myMax) {
     // Only change code below this line
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
@@ -136,7 +136,7 @@ function randomFraction() {
   // log result
   console.log(range);
 
-  /* Use the parseInt Function */
+// 108 : Use the parseInt Function 
   function convertToInteger(str) {
     return parseInt(str);
   }
@@ -144,7 +144,7 @@ function randomFraction() {
   const nmInt = convertToInteger("56");
   console.log(nmInt);
 
-  /* Use the parseInt Function with a Radix */
+// 109 : Use the parseInt Function with a Radix 
   function convertFromBinary(bin){
     return parseInt(bin, 2);
   }
@@ -152,7 +152,7 @@ function randomFraction() {
   const binInt = convertFromBinary("10011");
   console.log(binInt);
 
-  /* Use the Conditional (Ternary) Operator */
+// 110 : Use the Conditional (Ternary) Operator 
   function checkEqual(a, b){
     return a == b ? "Equal" : "Not Equal";
   }
@@ -160,7 +160,7 @@ function randomFraction() {
   const check = checkEqual(1,3);
   console.log(check);
 
-  /* Use Multiple Conditional (Ternary) Operators */
+// 111 : Use Multiple Conditional (Ternary) Operators 
   function checkSign(num){
     return (num > 0) ? "positive"
     : (num < 0) ? "negative"
@@ -170,7 +170,7 @@ function randomFraction() {
   const multiCheck = checkSign(-1);
   console.log(multiCheck);
 
-  /* Use Recursion to Create a Countdown*/
+// 112 : Use Recursion to Create a Countdown
   // Only change code below this line
   function countdown(n){
     if(n < 1){
