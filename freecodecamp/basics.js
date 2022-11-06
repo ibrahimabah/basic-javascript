@@ -147,8 +147,24 @@ const mySt = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
 
 console.log(myStr)
 
+// 028 : Concatenating Strings with Plus Operator
+const myConc = "This is the start. " + "This is the end."; // Change this line
 
-  //-_-_-_-_
+// 029 : oncatenating Strings with the Plus Equals Operator
+let myConcP = "This is the first sentence. ";
+myConcP += "This is the second sentence."
+
+// 030 : Constructing Strings with Variables
+const myName = "Ibrahima";
+const myQuo = "My name is " + myName + "and I am well!";
+
+// 031 : Appending Variables to Strings
+const someAdjective = "Awesome";
+let my = "Learning to code is ";
+myStr += someAdjective;
+
+
+  //-_-_-_-_t 
 
 
 // 105 : Generate Random Fractions with JavaScript
