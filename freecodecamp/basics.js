@@ -163,6 +163,36 @@ const someAdjective = "Awesome";
 let my = "Learning to code is ";
 myStr += someAdjective;
 
+/* last stop : 032 
+  Date: 22/12/2022 
+*/
+
+// 032 : Find the Length of a String
+  // Setup
+    let lastNameLength = 0;
+    const lastName = "Lovelace";
+
+  // Only change code below this line
+    lastNameLength = lastName.length;
+
+// 033 : Use Bracket Notation to Find the First Character in a String
+
+
+// 034 :
+// 035 :
+// 036 :
+// 037 :
+// 038 :
+// 039 :
+// 040 :
+// 041 :
+// 042 :
+// 043 :
+// 044 :
+// 045 :
+// 046 :
+// 047 :
+
 
   //-_-_-_-_t 
 
