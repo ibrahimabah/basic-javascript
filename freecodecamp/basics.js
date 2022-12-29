@@ -176,14 +176,64 @@ myStr += someAdjective;
     lastNameLength = lastName.length;
 
 // 033 : Use Bracket Notation to Find the First Character in a String
+  // Setup
+  let firstLetterOfLastName = "";
+  const lastName = "Lovelace";
+
+  // Only change code below this line
+  firstLetterOfLastName = lastName[0]; // Change this line
+
+// 034 : Understand String Immutability
+  // Setup
+  let myS = "Jello World";
+
+  // Only change code below this line
+  myS = "Hello Sir"; // Change this line
+  // Only change code above this line
+
+ 
+// 035 : Use Bracket Notation to Find the Nth Character in a String
+  // Setup
+  const lastName = "Lovelace";
+
+  // Only change code below this line
+  const thirdLetterOfLastName = lastName[2]; // Change this line
+
+// 036 : Use Bracket Notation to Find the Last Character in a String
+  // Setup
+  const lastName = "Lovelace";
+
+  // Only change code below this line
+  const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
 
 
-// 034 :
-// 035 :
-// 036 :
-// 037 :
-// 038 :
-// 039 :
+// 037 : Use Bracket Notation to Find the Nth-to-Last Character in a String
+  // Setup
+  const lastName = "Lovelace";
+
+  // Only change code below this line
+  const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+
+
+// 038 : Word Blanks
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = "The" + ' ' + myAdjective + ' ' + myNoun + ' ' + myVerb + ' ' + "very" + ' ' + myAdverb; // Change this line
+// Only change code above this line
+
+
+// 039 : Store Multiple Values in one Variable using JavaScript Arrays
+// Only change code below this line
+const myArray = [ "age:", 23];
+
+/*-----------------------------------LAST-STOP-----------------------------------
+------------------------------DATE-:-29/12/2022-----------------------------------
+*/
+
 // 040 :
 // 041 :
 // 042 :
