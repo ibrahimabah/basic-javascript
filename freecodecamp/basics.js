@@ -163,10 +163,6 @@ const someAdjective = "Awesome";
 let my = "Learning to code is ";
 myStr += someAdjective;
 
-/* last stop : 032 
-  Date: 22/12/2022 
-*/
-
 // 032 : Find the Length of a String
   // Setup
     let lastNameLength = 0;
@@ -231,7 +227,7 @@ const wordBlanks = "The" + ' ' + myAdjective + ' ' + myNoun + ' ' + myVerb + ' '
 const myArray = [ "age:", 23];
 
 /*-----------------------------------LAST-STOP-----------------------------------
-------------------------------DATE-:-29/12/2022-----------------------------------
+--------------------------------DATE-:-29/12/2022--------------------------------
 */
 
 // 040 :
