@@ -212,30 +212,58 @@ myStr += someAdjective;
 
 
 // 038 : Word Blanks
-const myNoun = "dog";
-const myAdjective = "big";
-const myVerb = "ran";
-const myAdverb = "quickly";
+  const myNoun = "dog";
+  const myAdjective = "big";
+  const myVerb = "ran";
+  const myAdverb = "quickly";
 
-// Only change code below this line
-const wordBlanks = "The" + ' ' + myAdjective + ' ' + myNoun + ' ' + myVerb + ' ' + "very" + ' ' + myAdverb; // Change this line
-// Only change code above this line
+  // Only change code below this line
+  const wordBlanks = "The" + ' ' + myAdjective + ' ' + myNoun + ' ' + myVerb + ' ' + "very" + ' ' + myAdverb; // Change this line
+  // Only change code above this line
 
 
 // 039 : Store Multiple Values in one Variable using JavaScript Arrays
-// Only change code below this line
-const myArray = [ "age:", 23];
+  // Only change code below this line
+  const myArr = [ "age:", 23];
+
+
+// 040 : Nest one Array within Another Array
+  // Only change code below this line
+  const myNeArray = [["Name:", "Ibrahima"], ["Age:", 23]];
+
+// 041 : Access Array Data with Indexes
+  const myIndxArr = [50, 60, 70];
+  let myData = myIndxArr[0];
+
+// 042 : Modify Array Data With Indexes
+  // Setup
+  const modArr = [18, 64, 99];
+
+  // Only change code below this line
+  modArr[0] = 45;
+
+// 043 : Access Multi-Dimensional Arrays With Indexes
+  const mulArr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+
+  const mData = mulArr[2][1];
+
+// 044 : Manipulate Arrays With push()
+  // Setup
+  const myArray = [["John", 23], ["cat", 2]];
+
+  // Only change code below this line
+  myArray.push(["dog", 3])
 
 /*-----------------------------------LAST-STOP-----------------------------------
---------------------------------DATE-:-29/12/2022--------------------------------
+--------------------------------DATE-:-16/01/2023--------------------------------
 */
 
-// 040 :
-// 041 :
-// 042 :
-// 043 :
-// 044 :
-// 045 :
+// 045 : 
 // 046 :
 // 047 :
 // 048 :
