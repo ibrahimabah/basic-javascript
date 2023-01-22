@@ -263,107 +263,170 @@ myStr += someAdjective;
 --------------------------------DATE-:-16/01/2023--------------------------------
 */
 
-// 045 : 
-// 046 :
-// 047 :
-// 048 :
-// 049 :
-// 050 :
-// 051 : 
-// 052 :
-// 053 :
-// 054 :
+// 045 : Manipulate Arrays With pop()
+  // Setup
+  const myArrPop = [["John", 23], ["cat", 2]];
+  const removedArrPop = myArrPop.pop();
+  // Only change code below this line
+
+
+// 046 : Manipulate Arrays With shift()
+  // Setup
+  const myArrShift = [["John", 23], ["dog", 3]];
+  let removedArrShift = myArrShift.shift();
+  // Only change code below this line
+
+// 047 : Manipulate Arrays With unshift()
+  // Setup
+  const myArrUnshift = [["John", 23], ["dog", 3]];
+  myArrUnshift.shift();
+  myArrUnshift.unshift(["Paul", 35]);
+  // Only change code below this line
+
+
+// 048 : Shopping List
+const myList = [["Water", 5],["Fruits", 7 ],["desserts", 3],["lunch", 5],["juice", 9]];
+
+// 049 : Write Reusable JavaScript with Functions
+  function reusableFunction() {
+    console.log("Hi World")
+  }
+
+  reusableFunction();
+
+// 050 : Passing Values to Functions with Arguments
+function functionWithArgs(argOne, argTwo) {
+  console.log( argOne + argTwo);
+}
+
+functionWithArgs(1, 2);
+
+
+// 051 :  Return a Value from a Function with Return
+function timesFive(int) {
+  return int * 5;
+}
+
+console.log(timesFive(5));
+
+
+// 052 :  Global Scope and Functions
+  // Declare the myGlobal variable below this line
+  const myGlobal = 10;
+
+  function fun1() {
+    // Assign 5 to oopsGlobal here
+    oopsGlobal = 5;
+  }
+
+  // Only change code above this line
+
+  function fun2() {
+    let output = "";
+    if (typeof myGlobal != "undefined") {
+      output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+      output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+  }
+
+
+// 053 :  Local Scope and Functions
+  function myLocalScope() {
+    // Only change code below this line
+    let myVar;
+    console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope();
+
+  // Run and check the console
+  // myVar is not defined outside of myLocalScope
+  console.log('outside myLocalScope', myVar);
+
+
+// 054 :  Global vs. Local Scope in Functions
+  // Setup
+  const outerWear = "T-Shirt";
+
+  function myOutfit() {
+    // Only change code below this line
+  let outerWear = "sweater"
+    // Only change code above this line
+    return outerWear;
+  }
+
+  myOutfit();
+
+
 // 055 :
 // 056 :
 // 057 :
 // 058 :
 // 059 :
 // 060 :
+// 061 :
+// 062 :
+// 063 :
+// 064 :
+// 065 :
+// 066 :
+// 067 :
+// 068 :
+// 069 :
+// 070 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
+// 000 :
 
 
   //-_-_-_-_t 
-
-
-// 105 : Generate Random Fractions with JavaScript
-  function randomFraction() {
-
-    // Only change code below this line
-  
-      return Math.random();
-  
-    // Only change code above this line
-    }
-  
-// 106 : Generate Random Whole Numbers with JavaScript 
-  let random = randomFraction();
-  console.log(random);
-
-  function randomWholeNum() {
-
-    // Only change code below this line
-  
-    return Math.floor(Math.random() * 10);
-  }
-  
-  let whole = randomWholeNum();
-  // log result
-  console.log(whole);
-
-// 107 Generate Random Whole Numbers within a Range 
-  function randomRange(myMin, myMax) {
-    // Only change code below this line
-    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
-    // Only change code above this line
-  }
-  let range = randomRange();
-  
-  // log result
-  console.log(range);
-
-// 108 : Use the parseInt Function 
-  function convertToInteger(str) {
-    return parseInt(str);
-  }
-  
-  const nmInt = convertToInteger("56");
-  console.log(nmInt);
-
-// 109 : Use the parseInt Function with a Radix 
-  function convertFromBinary(bin){
-    return parseInt(bin, 2);
-  }
-
-  const binInt = convertFromBinary("10011");
-  console.log(binInt);
-
-// 110 : Use the Conditional (Ternary) Operator 
-  function checkEqual(a, b){
-    return a == b ? "Equal" : "Not Equal";
-  }
-
-  const check = checkEqual(1,3);
-  console.log(check);
-
-// 111 : Use Multiple Conditional (Ternary) Operators 
-  function checkSign(num){
-    return (num > 0) ? "positive"
-    : (num < 0) ? "negative"
-    : "zero";
-  }
-
-  const multiCheck = checkSign(-1);
-  console.log(multiCheck);
-
-// 112 : Use Recursion to Create a Countdown
-  // Only change code below this line
-  function countdown(n){
-    if(n < 1){
-      return [];
-    } else {
-      let countCheck = countdown(n -1);
-      countCheck.unshift(n);
-      return countCheck;
-    }
-  }
-  // Only change code above this line
-  console.log(countdown(1));
