@@ -27,3 +27,22 @@ function diffArray(arr1, arr2) {
   }
   
   console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+  //  03   :    ----------------------------Seek and Destroy--------------------------    
+  function destroyer(arr) {
+    let worriors = [];
+    let ground = Object.values(arguments) [0];
+    let end = Object.values(arguments).splice(1);
+  
+    for(let i = 0; i < ground.length; i += 1) {
+      let areaF = ground[i];
+      if (end.indexOf(areaF) === -1) {
+        worriors.push(areaF);
+      }
+    }
+    return worriors;
+  }
+  
+  let result = destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+  
+  console.log(result);
