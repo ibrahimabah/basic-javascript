@@ -1,14 +1,13 @@
-// 01   :   Sum All Numbers in a Range
+//  01   :   Sum All Numbers in a Range
 function sumAll(arr) {
-    let minN = Math.min(arr[0], arr[1]);
-    let maxN = Math.max(arr[0], arr[1]);
-    var totalN = 0;
-
-    for( let i = minN; i <= maxN; i += 1) {
-        totalN += i;
+    let total = 0
+    arr.sort((a, b) => a - b);
+    for(let i = arr[0]; i <= arr[1]; i++) {
+        total += i;
     }
-
-    return totalN;
+    return total;
 }
 
-sumAll([1], [4]);
+console.log(sumAll([4, 1]));
+
+//  02  :
