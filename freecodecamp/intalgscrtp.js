@@ -67,3 +67,14 @@ function diffArray(arr1, arr2) {
 let final = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
 console.log(final);
+
+
+//   05   :   ----------------------------Spinal Tap Case--------------------------
+function spinalCase(str) {
+    let lowToUpper = str.replace(/([a-z])([A-Z])/g,"$1 $2");
+    let space = lowToUpper.replace(/\s|_/g, "-");
+    return space.toLowerCase();
+  }
+  
+  let output = spinalCase('ThisIsSpinalTap');
+  console.log(output)
