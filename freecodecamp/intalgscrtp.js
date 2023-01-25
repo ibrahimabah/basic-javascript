@@ -46,3 +46,24 @@ function diffArray(arr1, arr2) {
   let result = destroyer([1, 2, 3, 1, 2, 3], 2, 3);
   
   console.log(result);
+
+  //   04   :   ----------------------------Wherefore art thou--------------------------
+  function whatIsInAName(collection, source) {
+    var equalResult = [];
+    collection.forEach(collection => {
+      let index = 0;
+      for (let key in source) {
+        if(collection[key] === source[key]) {
+          index += 1;
+        }
+        if (index === Object.keys(source).length) {
+          equalResult.push(collection);
+        }
+      }
+    });
+    return equalResult
+}
+
+let final = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+console.log(final);
