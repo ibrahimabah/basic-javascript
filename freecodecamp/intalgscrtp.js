@@ -78,3 +78,25 @@ function spinalCase(str) {
   
   let output = spinalCase('ThisIsSpinalTap');
   console.log(output)
+
+//   06   :   --------------------------------Pig Latin------------------------------
+function translatePigLatin(str) {
+    let vwls = "ouiea".split("");
+    function vwlIs(ltr) {
+      return vwls.indexOf(ltr)
+    }
+  
+    for (let i = 0; i < str.length; i++){
+      let singleLtr = str[i];
+      if(vwls.indexOf(singleLtr) != -1 && i === 0){
+        return str + "way";
+      };
+      if(vwlIs(singleLtr) != -1){
+        return str.slice(i) + str.slice(0, i)   +       "ay";
+      }
+    }
+    return str + "ay";
+  }
+  
+  let output = translatePigLatin("consonant");
+  console.log(output);
