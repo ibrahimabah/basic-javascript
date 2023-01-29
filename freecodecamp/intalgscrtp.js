@@ -76,8 +76,8 @@ function spinalCase(str) {
     return space.toLowerCase();
   }
   
-  let output = spinalCase('ThisIsSpinalTap');
-  console.log(output)
+  let outPut = spinalCase('ThisIsSpinalTap');
+  console.log(outPut)
 
 //   06   :   --------------------------------Pig Latin------------------------------
 function translatePigLatin(str) {
@@ -100,3 +100,17 @@ function translatePigLatin(str) {
   
   let output = translatePigLatin("consonant");
   console.log(output);
+
+  //   07 :   --------------------------------Search and Replace------------------------------
+  function myReplace(str, before, after) {
+    if(before[0] === before[0].toUpperCase()){
+      after = after[0].toUpperCase() + after.slice(1)
+    } else if (before[0] === before[0].toLowerCase()){
+      after = after[0].toLowerCase() + after.slice(1)
+    };
+    return str.replace(before, after);
+  }
+  
+  console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+
+  
