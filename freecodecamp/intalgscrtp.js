@@ -113,4 +113,27 @@ function translatePigLatin(str) {
   
   console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
 
+  //  08 :   --------------------------------DNA Pairing------------------------------
+  function pairElement(str) {
+    let pairArr = [];
   
+    function checkPair(word) {
+      if(word === "A") {
+        return "T"
+      } else if(word === "T") {
+        return "A"
+      } else if(word === "C") {
+        return "G"
+      } else if(word === "G") {
+        return "C"
+      }
+    }
+  
+    for(let word of str){
+      pairArr.push([word, checkPair(word)])
+    }
+    return pairArr;
+  }
+  
+  console.log(pairElement("GCG"));
+
