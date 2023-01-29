@@ -147,3 +147,21 @@ function fearNotLetter(str) {
   }
   
   console.log(fearNotLetter("abce"));
+
+
+//  10 :  --------------------------------Sorted Union------------------------------
+function uniteUnique(arr) {
+    let args = [...arguments];
+    let primes = [];
+  
+    for (let i = 0; i < args.length; i++){
+      for(let z = 0; z < args[i].length; z++){
+        if(primes.indexOf(args[i][z]) === -1){
+          primes.push(args[i][z])
+        }
+      }
+    }
+    return primes;
+  }
+  
+  uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
