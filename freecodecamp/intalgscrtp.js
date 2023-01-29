@@ -28,7 +28,7 @@ function diffArray(arr1, arr2) {
   
   console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
 
-  //  03   :    ----------------------------Seek and Destroy--------------------------    
+//  03   :    ----------------------------Seek and Destroy--------------------------    
   function destroyer(arr) {
     let worriors = [];
     let ground = Object.values(arguments) [0];
@@ -47,7 +47,7 @@ function diffArray(arr1, arr2) {
   
   console.log(result);
 
-  //   04   :   ----------------------------Wherefore art thou--------------------------
+//   04   :   ----------------------------Wherefore art thou--------------------------
   function whatIsInAName(collection, source) {
     var equalResult = [];
     collection.forEach(collection => {
@@ -101,7 +101,7 @@ function translatePigLatin(str) {
   let output = translatePigLatin("consonant");
   console.log(output);
 
-  //   07 :   --------------------------------Search and Replace------------------------------
+//   07 :   --------------------------------Search and Replace------------------------------
   function myReplace(str, before, after) {
     if(before[0] === before[0].toUpperCase()){
       after = after[0].toUpperCase() + after.slice(1)
@@ -113,7 +113,7 @@ function translatePigLatin(str) {
   
   console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
 
-  //  08 :   --------------------------------DNA Pairing------------------------------
+//  08 :   --------------------------------DNA Pairing------------------------------
   function pairElement(str) {
     let pairArr = [];
   
@@ -137,3 +137,13 @@ function translatePigLatin(str) {
   
   console.log(pairElement("GCG"));
 
+//  09 :  --------------------------------Missing Letters------------------------------
+function fearNotLetter(str) {
+    for (let i = 0; i < str.length -1; i++){
+      if(str.charCodeAt(i + 1) - str.charCodeAt(i) > 1){
+        return String.fromCharCode(str.charCodeAt(i) + 1);
+      }
+    }
+  }
+  
+  console.log(fearNotLetter("abce"));
