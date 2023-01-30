@@ -8,7 +8,7 @@ function sumAll(arr) {
     return total;
 }
 
-console.log(sumAll([4, 1]));
+// console.log(sumAll([4, 1]));
 
 //  02   :    ----------------------------Diff Two Arrays----------------------------
 function diffArray(arr1, arr2) {
@@ -26,7 +26,7 @@ function diffArray(arr1, arr2) {
     return newArr;
   }
   
-  console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+  // console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
 
 //  03   :    ----------------------------Seek and Destroy--------------------------    
   function destroyer(arr) {
@@ -45,7 +45,7 @@ function diffArray(arr1, arr2) {
   
   let result = destroyer([1, 2, 3, 1, 2, 3], 2, 3);
   
-  console.log(result);
+  // console.log(result);
 
 //   04   :   ----------------------------Wherefore art thou--------------------------
   function whatIsInAName(collection, source) {
@@ -66,7 +66,7 @@ function diffArray(arr1, arr2) {
 
 let final = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
 
-console.log(final);
+// console.log(final);
 
 
 //   05   :   ----------------------------Spinal Tap Case--------------------------
@@ -77,7 +77,7 @@ function spinalCase(str) {
   }
   
   let outPut = spinalCase('ThisIsSpinalTap');
-  console.log(outPut)
+  // console.log(outPut)
 
 //   06   :   --------------------------------Pig Latin------------------------------
 function translatePigLatin(str) {
@@ -99,7 +99,7 @@ function translatePigLatin(str) {
   }
   
   let output = translatePigLatin("consonant");
-  console.log(output);
+  // console.log(output);
 
 //   07 :   --------------------------------Search and Replace------------------------------
   function myReplace(str, before, after) {
@@ -111,7 +111,7 @@ function translatePigLatin(str) {
     return str.replace(before, after);
   }
   
-  console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+  // console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
 
 //  08 :   --------------------------------DNA Pairing------------------------------
   function pairElement(str) {
@@ -135,7 +135,7 @@ function translatePigLatin(str) {
     return pairArr;
   }
   
-  console.log(pairElement("GCG"));
+  // console.log(pairElement("GCG"));
 
 //  09 :  --------------------------------Missing Letters------------------------------
 function fearNotLetter(str) {
@@ -146,7 +146,7 @@ function fearNotLetter(str) {
     }
   }
   
-  console.log(fearNotLetter("abce"));
+  // console.log(fearNotLetter("abce"));
 
 
 //  10 :  --------------------------------Sorted Union------------------------------
@@ -201,7 +201,7 @@ function sumFibs(num) {
   return total;
 }
 
-console.log(sumFibs(4));
+// console.log(sumFibs(4));
 
 //    13  :   --------------------------Sum All Primes-------------------------
   function sumPrimes(num) {
@@ -223,7 +223,21 @@ console.log(sumFibs(4));
 
   sumPrimes(10);
 
-  //    14  : --------------------------Smallest Common Multiple-------------------------
-  
+//    14  : --------------------------Smallest Common Multiple-------------------------
+  function smallestCommons(arr) {
+    let ultra = Math.max(arr[0], arr[1]);
+    let base = Math.min(arr[0], arr[1]);
+    let sum = ultra;
+
+    for(let i = ultra; i >= base; i--){
+      if(sum % i !== 0){
+        sum += ultra;
+        i = ultra;
+      }
+    }
+
+    return sum;
+  }
+  // console.log(smallestCommons([5,6]));
 
   //    15  :
