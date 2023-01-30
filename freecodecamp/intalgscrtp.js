@@ -223,7 +223,7 @@ function sumFibs(num) {
 
   sumPrimes(10);
 
-//    14  : --------------------------Smallest Common Multiple-------------------------
+//    14  :   --------------------------Smallest Common Multiple-------------------------
   function smallestCommons(arr) {
     let ultra = Math.max(arr[0], arr[1]);
     let base = Math.min(arr[0], arr[1]);
@@ -240,4 +240,14 @@ function sumFibs(num) {
   }
   // console.log(smallestCommons([5,6]));
 
-  //    15  :
+//    15  :   -------------------------------Drop it------------------------------
+function dropElements(arr, func) {
+  if(arr.length === 0 || func(arr[0])){
+    return arr;
+  } else{
+    arr.shift();
+    return dropElements(arr, func)
+  }
+}
+
+// console.log(dropElements([1, 2, 3], function(n) {return n < 3; }));
