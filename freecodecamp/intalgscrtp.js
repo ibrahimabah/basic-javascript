@@ -167,7 +167,21 @@ function uniteUnique(arr) {
   uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
   //    --------------------------------///////////////------------------------------
-  //    11  :  -------------------------Convert HTML Entities------------------------
+//    11  :  -------------------------Convert HTML Entities------------------------
+  function convertHTML(str) {
+    const charCovrt = { 
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&apos;'
+    }
+    return str.replace(/[&<>"']/g, function(match) {
+      return charCovrt[match]
+    });
+  }
+
+convertHTML("Dolce & Gabbana");
   //    12  :
   //    13  :
   //    14  : 
