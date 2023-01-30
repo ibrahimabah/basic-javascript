@@ -182,7 +182,27 @@ function uniteUnique(arr) {
   }
 
 convertHTML("Dolce & Gabbana");
-  //    12  :
+
+//    12  :  ----------------------Sum All Odd Fibonacci Numbers---------------------
+function sumFibs(num) {
+  let f = 1, n = 1;
+  let total = 2;
+
+  let fbn = f + n;
+  while(fbn <= num){
+    if((fbn % 2 !== 0 ) && (fbn <= num)) {
+      total += fbn;
+    }
+    f = n;
+    n = fbn;
+    fbn = f + n;  
+  }
+
+  return total;
+}
+
+console.log(sumFibs(4));
+
   //    13  :
   //    14  : 
   //    15  :
