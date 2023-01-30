@@ -203,6 +203,27 @@ function sumFibs(num) {
 
 console.log(sumFibs(4));
 
-  //    13  :
-  //    14  : 
+//    13  :   --------------------------Sum All Primes-------------------------
+  function sumPrimes(num) {
+  let prime = [];
+  let total = 0;
+
+  for(let i = 2; i <= num; i++){
+    let checkPrime = true;
+    for(let p = 2; p < i; p++){
+      if(i % p === 0) {
+        checkPrime = false;
+          break;
+        }
+      }
+      total += checkPrime ? i : 0;
+    }
+  return total;
+  }
+
+  sumPrimes(10);
+
+  //    14  : --------------------------Smallest Common Multiple-------------------------
+  
+
   //    15  :
