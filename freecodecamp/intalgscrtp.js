@@ -293,6 +293,19 @@ function truthCheck(collection, pre) {
 
 console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "isBot"));
 
-//  19  :   -------------------------------Binary Agents------------------------------
+//  19  :   ------------------------------Arguments Optional-----------------------------
+function addTogether() {
+  const [one, other] = arguments;
+  if(typeof(one) !== "number")
+  return undefined;
+  if(arguments.length === 1)
+  return (other) => addTogether(one, other);
+  if (typeof(other) !== "number")
+  return undefined; 
+  return one + other;
+}
+
+console.log(addTogether(2,3));
+
 //  20  :   -------------------------------Binary Agents------------------------------
 //  21  :   -------------------------------Drop it------------------------------
