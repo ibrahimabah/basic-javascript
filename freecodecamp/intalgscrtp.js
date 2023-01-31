@@ -281,7 +281,18 @@ function binaryAgent(str) {
 
 console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
 
-//  18  :   -------------------------------Binary Agents------------------------------
+//  18  :   -------------------------------Everything Be True------------------------------
+function truthCheck(collection, pre) {
+  for(let i = 0; i < collection.length; i++ ){
+    if(!collection[i][pre]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "isBot"));
+
 //  19  :   -------------------------------Binary Agents------------------------------
 //  20  :   -------------------------------Binary Agents------------------------------
 //  21  :   -------------------------------Drop it------------------------------
