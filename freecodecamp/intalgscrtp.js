@@ -330,7 +330,7 @@ const Person = function(firstAndLast) {
   }
 };
 
-const bob = new Person('Ibrahima Bah');
+const bob = new Person('Bob Ross');
 console.log(bob.getFullName());
 
 //  21  :   -------------------------------Drop it------------------------------
