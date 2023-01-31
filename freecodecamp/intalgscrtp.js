@@ -307,5 +307,30 @@ function addTogether() {
 
 console.log(addTogether(2,3));
 
-//  20  :   -------------------------------Binary Agents------------------------------
+//  20  :   -------------------------------Make a Person------------------------------
+const Person = function(firstAndLast) {
+  
+  this.getFullName = function() {
+    return firstAndLast
+  }
+    this.getFirstName = function() {
+    return firstAndLast.split(" ")[0]
+  }
+    this.getLastName = function() {
+    return firstAndLast.split(" ")[1]
+  }
+    this.setFirstName = function(name) {
+    return firstAndLast = name + " " + firstAndLast.split(" ")[1]
+  }
+    this.setLastName = function(name) {
+    return firstAndLast = firstAndLast.split(" ")[0] + " " + name
+  }
+    this.setFullName = function(name) {
+    return firstAndLast = name
+  }
+};
+
+const bob = new Person('Ibrahima Bah');
+console.log(bob.getFullName());
+
 //  21  :   -------------------------------Drop it------------------------------
