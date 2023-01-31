@@ -251,3 +251,37 @@ function dropElements(arr, func) {
 }
 
 // console.log(dropElements([1, 2, 3], function(n) {return n < 3; }));
+
+//  16  :   -------------------------------Steamroller------------------------------
+  function steamrollArray(arr) {
+  let flatArr = [];
+
+  for(let i = 0; i < arr.length; i++){
+    if(Array.isArray(arr[i])){
+      let nestArr = steamrollArray(arr[i]);
+      flatArr = flatArr.concat(nestArr);
+    } else {
+      flatArr.push(arr[i])
+    }
+  }
+
+  return flatArr;
+}
+
+steamrollArray([1, [2], [3, [[4]]]]);
+
+//  17  :   -------------------------------Binary Agents------------------------------
+function binaryAgent(str) {
+  let transLang = str.split(" ").map(function(bin){
+    return String.fromCharCode(parseInt(bin, 2))
+  });
+
+  return transLang.join("");
+}
+
+console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
+
+//  18  :   -------------------------------Binary Agents------------------------------
+//  19  :   -------------------------------Binary Agents------------------------------
+//  20  :   -------------------------------Binary Agents------------------------------
+//  21  :   -------------------------------Drop it------------------------------
